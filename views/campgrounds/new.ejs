@@ -1,8 +1,8 @@
 <% layout('layouts/boilerplate')%>
 <div class="row">
-    <h1 class="text-center">New Campground</h1>
+    <h1 class="text-center">New Destination</h1>
     <div class="col-6 offset-3">
-        <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+        <form action="/destinations" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
                 <input class="form-control" type="text" id="title" name="campground[title]" required>
@@ -26,7 +26,7 @@
                 </div>
             </div> -->
             <div class="mb-3">
-                <label class="form-label" for="price">Campground Price</label>
+                <label class="form-label" for="price">Destination Travel Expense</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
@@ -55,9 +55,9 @@
                 </div>
             </div>
             <div class="mb-3">
-                <button class="btn btn-success">Add Campground</button>
+                <button class="btn btn-success">Add Destination</button>
             </div>
         </form>
-        <a href="/campgrounds">All Campgrounds</a>
+        <button class="btn btn-info mb-3"> <a href="/destinations"  style="color: aliceblue; text-decoration: none;" >All Destinations</a></button>
     </div>
 </div>

@@ -2,9 +2,10 @@
 <% layout('layouts/boilerplate')%>
 <div id="map" style="width: 100%; height: 500px"></div>
 <div class="container">
-<h1>All Campgrounds</h1>
+<h1>All Destinations</h1>
 <div>
-    <a href="/campgrounds/new">Add Campground</a>
+    
+    <button class="btn btn-success mb-3"> <a href="/destinations/new"  style="color: aliceblue; text-decoration: none;" >Add Destination</a></button>
 </div>
 <% for (let campground of campgrounds){%>
 <div class="card  mb-3">
@@ -24,7 +25,7 @@
                 <p class="card-text">
                     <small class="text-muted"><%= campground.location%></small>
                 </p>
-                <a class="btn btn-primary" href="/campgrounds/<%=campground._id%>">View <%=campground.title%></a>
+                <a class="btn btn-primary" href="/destinations/<%=campground._id%>">View <%=campground.title%></a>
             </div>
         </div>
     </div>
